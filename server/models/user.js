@@ -7,5 +7,5 @@ const userSchema = new Schema({
     name: String
 })
 
-//defines 'user' schema with model (schema) defined above and would connect to 'users' collection on MongoDB
+//defines 'user' model with schema defined above and would connect to 'users' collection on MongoDB
 module.exports = mongoose.model('user', userSchema, 'users');
