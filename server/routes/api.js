@@ -52,7 +52,68 @@ router.post('/login', (req, res) => {
             }
         }
     });
-
+    
 })
 
+router.get("/events", (req, res) => {
+    let events = [
+        {
+            "_id": "1",
+            "name" : "Auto Expo 1",
+            "description" : "Auto Expo Desc",
+            "date": "2018-04-01T10:10:01.43.511Z"
+        },
+        {
+            "_id": "2",
+            "name" : "Auto Expo 2",
+            "description" : "Auto Expo Desc 22",
+            "date": "2018-04-01T10:10:02.43.512Z"
+        },
+        {
+            "_id": "3",
+            "name" : "Auto Expo 3",
+            "description" : "Auto Expo Desc 33",
+            "date": "2018-04-01T10:10:03.43.512Z"
+        },
+        {
+            "_id": "4",
+            "name" : "Auto Expo 4",
+            "description" : "Auto Expo Desc 4",
+            "date": "2018-04-01T10:10:04.43.512Z"
+        }
+        
+    ];
+    res.json(events);
+})
+
+router.get("/special", (req, res) => {
+    let events = [
+        {
+            "_id": "1",
+            "name" : "Special Expo 1",
+            "description" : "Special Expo Desc",
+            "date": "2018-04-01T10:10:01.43.511Z"
+        },
+        {
+            "_id": "2",
+            "name" : "Special Expo 2",
+            "description" : "Special Expo Desc 22",
+            "date": "2018-04-01T10:10:02.43.512Z"
+        },
+        {
+            "_id": "3",
+            "name" : "Special Expo 3",
+            "description" : "Special Expo Desc 33",
+            "date": "2018-04-01T10:10:03.43.512Z"
+        },
+        {
+            "_id": "4",
+            "name" : "Special Expo 4",
+            "description" : "Special Expo Desc 4",
+            "date": "2018-04-01T10:10:04.43.512Z"
+        }
+        
+    ];
+    res.json(events);
+})
 module.exports = router;
